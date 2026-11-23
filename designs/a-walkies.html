@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dog Walkers of Davenham (concept) — A, Walkies!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600;800&family=Bagel+Fat+One&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FFF6E0;--ink:#1F2A1C;--ball:#D6EE3B;--tom:#E0401F;--sky:#BFE6F2;--soft:#4A5544;
+--pic:url("img/wp-content-uploads-2024-08-screenshot-2024-08-25-183306.png")}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1.0625rem/1.6 "Albert Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bagel Fat One","Albert Sans",sans-serif;font-weight:400;margin:0;line-height:1;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--tom);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+
+/* top */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+.mark{display:inline-flex;flex-direction:column;text-decoration:none;font:400 1.5rem/0.95 "Bagel Fat One",sans-serif;color:var(--ink)}
+.mark span{display:flex;align-items:center}
+.mark small{font:800 .72rem/1 "Albert Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;margin-top:5px;color:var(--tom)}
+.mark svg{width:.78em;height:.78em;margin:0 .03em;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.mark:hover svg{transform:rotate(200deg)}
+.nav{display:flex;gap:22px;align-items:center;font-weight:600}
+.nav a{text-decoration:none;padding:6px 2px;border-bottom:3px solid transparent}
+.nav a:hover{border-color:var(--ball)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--ball);font-weight:800;text-decoration:none;padding:14px 22px;border-radius:999px;transition:transform .25s cubic-bezier(.16,1,.3,1),background .2s}
+.btn:hover{transform:translateY(-2px) rotate(-1.5deg);background:#000}
+.btn.alt{background:var(--ball);color:var(--ink)}
+.btn.alt:hover{background:#E6F96A}
+.nav .btn{padding:10px 18px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,4vw,60px);align-items:center;padding:26px 0 84px}
+.hero h1{font-size:clamp(4.2rem,12.5vw,6rem);color:var(--tom);letter-spacing:-.01em;display:flex}
+.hero h1 b{font-weight:400;display:inline-block}
+.hero h1 b:nth-child(odd){transform:rotate(-5deg) translateY(4px)}
+.hero h1 b:nth-child(even){transform:rotate(4deg) translateY(-4px)}
+.hero .say{font-size:clamp(1.2rem,2.1vw,1.5rem);line-height:1.4;font-weight:600;margin:26px 0 12px;max-width:26ch}
+.hero .more{max-width:44ch;color:var(--soft)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.snap{position:relative;padding:0 0 34px}
+.photo{background-image:var(--pic);background-repeat:no-repeat;display:block}
+.p8{aspect-ratio:537/283;background-size:151.77% auto;background-position:100% 100%}
+.p2{aspect-ratio:1;background-size:403.47% auto;background-position:45.35% 1.67%}
+.p1{aspect-ratio:270/222;background-size:301.85% auto;background-position:0 0}
+.p3{aspect-ratio:328/222;background-size:248.48% auto;background-position:100% 0}
+.p5{aspect-ratio:278/280;background-size:293.17% auto;background-position:51.77% 44.23%}
+.p6{aspect-ratio:252/280;background-size:323.41% auto;background-position:100% 44.23%}
+.p7{aspect-ratio:270/283;background-size:301.85% auto;background-position:0 100%}
+.snap .p8{border:10px solid #fff;border-radius:34px;transform:rotate(2deg);box-shadow:0 22px 40px -22px rgba(31,42,28,.55)}
+.snap .p2{position:absolute;left:-18px;bottom:0;width:34%;border:8px solid #fff;border-radius:50%;transform:rotate(-6deg);box-shadow:0 14px 26px -14px rgba(31,42,28,.6)}
+.ball{position:absolute;right:6%;top:-30px;width:86px;height:86px;animation:drop 1.5s cubic-bezier(.3,0,.5,1) .3s both}
+@keyframes drop{0%{transform:translateY(-260px) rotate(-160deg)}38%{transform:translateY(0) rotate(0)}56%{transform:translateY(-70px) rotate(60deg)}74%{transform:translateY(0) rotate(110deg)}86%{transform:translateY(-18px) rotate(130deg)}100%{transform:translateY(0) rotate(150deg)}}
+.tag{position:absolute;right:2%;bottom:6px;background:var(--sky);font-weight:800;padding:8px 16px;border-radius:999px;transform:rotate(-3deg)}
+
+/* prices */
+.menu{background:var(--ball);border-radius:44px 44px 0 0;padding:72px 0 80px}
+.menu h2,.gang h2,.us h2,.say2 h2,.steps h2{font-size:clamp(2.3rem,6vw,3.8rem)}
+.menu .lead{max-width:50ch;margin:16px 0 34px;font-weight:600}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 24px;align-items:center;padding:22px 0;border-top:3px solid var(--ink)}
+.row:last-of-type{border-bottom:3px solid var(--ink)}
+.row h3{font-size:clamp(1.6rem,4vw,2.4rem)}
+.row p{max-width:56ch;margin-top:8px}
+.price{background:var(--ink);color:var(--cream);border-radius:999px;padding:14px 22px;text-align:center;font:400 1.9rem/1 "Bagel Fat One",sans-serif;transform:rotate(-3deg);white-space:nowrap}
+.row:nth-of-type(even) .price{transform:rotate(3deg);background:#fff;color:var(--tom)}
+.row:nth-of-type(even) .price small{color:var(--ink)}
+.price small{display:block;font:800 .8rem/1.2 "Albert Sans",sans-serif;margin-top:5px}
+.small{margin-top:22px;font-weight:600;max-width:70ch}
+
+/* pack rules */
+.rules{background:var(--ink);color:var(--cream);padding:76px 0}
+.rules h2{font-size:clamp(2.3rem,6vw,3.8rem);color:var(--ball)}
+.rules ul{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 56px}
+.rules li strong{display:block;font:400 clamp(1.5rem,3.4vw,2.1rem)/1.05 "Bagel Fat One",sans-serif;color:#fff;margin-bottom:8px}
+.rules li:nth-child(1) strong{color:var(--ball)}
+.rules li{max-width:44ch;color:#E8E6D6}
+.rules li:nth-child(even){transform:translateY(22px)}
+
+/* gang */
+.gang{padding:84px 0 70px}
+.gang p{max-width:54ch;margin-top:14px}
+.pile{display:grid;grid-template-columns:1.25fr 1fr 1.05fr 1fr;gap:18px;align-items:center;margin-top:38px}
+.pile .photo{border:8px solid #fff;border-radius:22px;box-shadow:0 16px 30px -18px rgba(31,42,28,.55);transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.pile .photo:nth-child(1){transform:rotate(-3deg)}
+.pile .photo:nth-child(2){transform:rotate(2.5deg) translateY(16px)}
+.pile .photo:nth-child(3){transform:rotate(-1.5deg)}
+.pile .photo:nth-child(4){transform:rotate(4deg) translateY(-10px)}
+.pile .photo:hover{transform:rotate(0) scale(1.04)}
+
+/* us */
+.us{background:var(--sky);padding:76px 0}
+.us .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 56px;margin-top:30px}
+.us h3{font-size:2rem;color:var(--tom);margin-bottom:10px}
+.us p+p{margin-top:12px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px;padding:0;list-style:none}
+.badges li{background:#fff;border-radius:999px;padding:9px 18px;font-weight:800}
+.badges li:nth-child(odd){transform:rotate(-1.5deg)}
+.badges li:nth-child(even){transform:rotate(1.5deg)}
+
+/* reviews */
+.say2{padding:84px 0}
+.big{font:400 clamp(2rem,5.6vw,3.6rem)/1.08 "Bagel Fat One",sans-serif;color:var(--tom);max-width:18ch;margin:0;text-wrap:balance}
+.who{font-weight:800;margin-top:14px}
+.others{display:grid;grid-template-columns:1.3fr 1fr;gap:40px 56px;margin-top:50px;border-top:3px solid var(--ink);padding-top:34px}
+.others blockquote{margin:0;font-size:1.15rem;line-height:1.5}
+.others cite{display:block;font-style:normal;font-weight:800;margin-top:12px}
+
+/* steps */
+.steps{background:var(--ball);padding:76px 0 84px}
+.steps ol{list-style:none;counter-reset:s;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px}
+.steps li{counter-increment:s;font-weight:600;line-height:1.4}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--ink);color:var(--ball);font:400 1.7rem/1 "Bagel Fat One",sans-serif;margin-bottom:14px}
+.steps li:nth-child(even)::before{transform:translateY(-8px) rotate(8deg)}
+.steps .small a{font-weight:800}
+
+/* foot */
+.foot{background:var(--ink);color:var(--cream);padding:76px 0 40px}
+.foot h2{font-size:clamp(2.6rem,8vw,5rem);color:var(--ball)}
+.tel{display:inline-block;font:400 clamp(2.1rem,7.4vw,4.4rem)/1 "Bagel Fat One",sans-serif;color:#fff;text-decoration:none;margin:22px 0 10px;transition:color .2s}
+.tel:hover{color:var(--ball)}
+.foot .lines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:34px;border-top:2px solid #3B4A36;padding-top:28px;color:#E8E6D6}
+.foot .lines a{font-weight:800;overflow-wrap:anywhere}
+.foot .lines a:hover{color:var(--ball)}
+.foot .legal{margin-top:40px;font-size:.9rem;color:#C9CBB6}
+
+@media (max-width:900px){
+.nav a:not(.btn){display:none}
+.hero{grid-template-columns:1fr;padding-bottom:64px}
+.snap{order:-1;margin:18px 6px 0}
+.rules ul,.us .two,.others,.foot .lines{grid-template-columns:1fr}
+.rules li:nth-child(even){transform:none}
+.pile{grid-template-columns:1fr 1fr;gap:22px 16px}
+.steps ol{grid-template-columns:1fr;gap:18px}
+.steps li{display:grid;grid-template-columns:58px 1fr;gap:16px;align-items:center}
+.steps li::before{margin:0}
+}
+@media (max-width:520px){
+.mark{font-size:1.25rem}
+.nav .btn{padding:9px 14px;font-size:.95rem}
+.row{grid-template-columns:1fr}
+.price{justify-self:start}
+.ball{width:64px;height:64px;top:-22px}
+.snap .p2{left:-8px}
+.tag{font-size:.9rem}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.ball{animation:none;transform:rotate(150deg)}
+*{transition:none!important}
+}
+</style>
+</head>
+<body>
+<div style="background:#17201B;color:#fff;font:500 14px/1.4 system-ui,sans-serif;padding:9px 20px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;position:relative;z-index:2147483000"><span style="display:inline-flex;align-items:center;gap:8px"><svg style="height:12px;width:auto;color:#fff" viewBox="0 0 487.5 208.5" role="img" aria-label="Pete Owen Design logo"><path fill="currentColor" d="M487.5,10.6h-41.2v15.5c-15.3-10.6-33.9-16.8-53.8-16.8-30.1,0-57,14.1-74.4,36-17.4-21.9-44.3-36-74.4-36s-57,14.1-74.4,36c-17.4-21.9-44.3-36-74.4-36C44.8,9.4,3.8,48,0,96.9h-.3v100.3h41.2v-14.5c15.3,10.6,33.9,16.8,53.8,16.8,30.1,0,57-14.1,74.4-36,17.4,21.9,44.3,36,74.4,36s57-14.1,74.4-36c17.4,21.9,44.3,36,74.4,36,52.4,0,95.1-42.6,95.1-95.1s0-1.3,0-1.9h0V10.6h0ZM94.6,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM243.5,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM392.4,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8Z"/></svg> Design idea by Pete Owen Design. Not the live Dog Walkers of Davenham website.</span><a href="../index.html" style="color:#fff;font-weight:700">Back to the start</a></div>
+<!--
+THESIS: The best word a dog knows, shouted across the page.
+OWN-WORLD: Tennis-ball lime, snapshots from their own walks, chunky letters that wag.
+STORY: Walkies, then what it costs, the pack rules, the gang, Ann and Andy, how to start.
+FIRST VIEWPORT: "Walkies!", a real dog carrying a huge stick, the price of an hour, a phone button.
+-->
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#top" aria-label="Dog Walkers of Davenham">
+      <span aria-hidden="true">D<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#D6EE3B" stroke="#1F2A1C" stroke-width="2"/><path d="M6 8c7 5 9 17 3 26M34 6c-7 6-8 18-2 27" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>g Walkers</span>
+      <small aria-hidden="true">of Davenham</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#prices">Prices</a><a href="#rules">Pack rules</a><a href="#us">Ann &amp; Andy</a><a href="#start">How to start</a>
+      <a class="btn" href="tel:07919356457">07919 356 457</a>
+    </nav>
+  </header>
+
+  <main id="top">
+  <section class="hero">
+    <div>
+      <h1 aria-label="Walkies!"><b aria-hidden="true">W</b><b aria-hidden="true">a</b><b aria-hidden="true">l</b><b aria-hidden="true">k</b><b aria-hidden="true">i</b><b aria-hidden="true">e</b><b aria-hidden="true">s</b><b aria-hidden="true">!</b></h1>
+      <p class="say">Ann and Andy walk the dogs of Davenham, Kingsmead, Hartford and Moulton.</p>
+      <p class="more">A mother and son, one air-conditioned dog van, and never more than four dogs at a time. An hour's walk is £17.00, and your dog comes home towel dried.</p>
+      <div class="cta"><a class="btn" href="tel:07919356457">Call 07919 356 457</a><a class="btn alt" href="mailto:info@dogwalkersofdavenham.co.uk">Send us an email</a></div>
+    </div>
+    <div class="snap">
+      <span class="photo p8" role="img" aria-label="A spaniel on one of their walks carrying a stick far too big for it, with a labrador behind"></span>
+      <span class="photo p2" role="img" aria-label="A vizsla looking up at the camera"></span>
+      <svg class="ball" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#D6EE3B" stroke="#1F2A1C" stroke-width="1.6"/><path d="M6 8c7 5 9 17 3 26M34 6c-7 6-8 18-2 27" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span class="tag">Stick of the week</span>
+    </div>
+  </section>
+  </main>
+</div>
+
+<section class="menu" id="prices">
+  <div class="wrap">
+    <h2>What it costs</h2>
+    <p class="lead">When you aren’t able to look after your pet, let us do the hard work for you.</p>
+    <div class="row"><div><h3>Dog walking</h3><p>A proper hour of play and exploring, in a group of four at most. Towel dried afterwards, and plenty of fresh water.</p></div><div class="price">£17.00<small>1 hour</small></div></div>
+    <div class="row"><div><h3>Puppy visits</h3><p>We pop in, let them into the garden, feed them and make a fuss. Two visits a day is £20.</p></div><div class="price">£10<small>30 min visit</small></div></div>
+    <div class="row"><div><h3>Cats and small animals</h3><p>A friendly face during the day, food, fresh water and any medication. Two visits a day is £20. Prices are for up to two cats.</p></div><div class="price">£10<small>30 min visit</small></div></div>
+    <div class="row"><div><h3>Pet sitting</h3><p>For dogs, cats and small animals, in the comfort of their own home. This can include overnight stays.</p></div><div class="price">Ask us<small>please enquire</small></div></div>
+    <p class="small">Additional dogs charged at £7.00. Weekend bookings are £3 extra and are subject to arrangement.</p>
+  </div>
+</section>
+
+<section class="rules" id="rules">
+  <div class="wrap">
+    <h2>The pack rules</h2>
+    <ul>
+      <li><strong>Four dogs. Never five.</strong>We will never walk more than four dogs at any time.</li>
+      <li><strong>No muddy paws indoors.</strong>After every walk your dog is towel dried and offered plenty of fresh water.</li>
+      <li><strong>Off the lead when we’re sure.</strong>We get to know your dog on their first walks. Once we trust their recall and you have signed the Off Lead form, off they go.</li>
+      <li><strong>Away? No charge.</strong>Unlike most dog walking companies, we do not charge you to reserve your dog’s space. Just give us as much notice as you can.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="gang">
+  <div class="wrap">
+    <h2>Some of the gang</h2>
+    <p>Out on their walks around Davenham. We love nothing more than to see dogs running around, playing and exploring together.</p>
+    <div class="pile">
+      <span class="photo p3" role="img" aria-label="Two spaniels running across a field"></span>
+      <span class="photo p6" role="img" aria-label="A golden retriever, a collie and a westie sitting together"></span>
+      <span class="photo p1" role="img" aria-label="Three dogs waiting on a footpath"></span>
+      <span class="photo p7" role="img" aria-label="A cockapoo and two small friends out on a lane"></span>
+    </div>
+  </div>
+</section>
+
+<section class="us" id="us">
+  <div class="wrap">
+    <h2>Who’s holding the lead?</h2>
+    <div class="two">
+      <div><h3>Ann</h3><p>Lives in Hartford and has always been surrounded by animals: hamsters, guinea pigs, rabbits, water dragons, a chameleon, and Timmy, a 20 year old leopard tortoise.</p><p>Her sprocker spaniel Skye is a qualified search and rescue dog. Ann is a qualified canine first aider.</p></div>
+      <div><h3>Andy</h3><p>Ann’s son. He grew up with dogs around him and has been walking with Ann since July 2020.</p><p>He has a diploma in Animal Welfare from Reaseheath College and previously worked with birds of prey.</p></div>
+    </div>
+    <ul class="badges"><li>Registered with NarpsUK</li><li>Fully insured</li><li>Criminal record checked</li><li>Canine first aider</li></ul>
+  </div>
+</section>
+
+<section class="say2">
+  <div class="wrap">
+    <blockquote class="big">“I LOVE these guys!”</blockquote>
+    <p class="who">Mr Moriarty, who went on: “So professional yet personable and so very accommodating!”</p>
+    <div class="others">
+      <blockquote>“It’s so great to know our old Husky is well cared for while we are at work. He loves his walks with you all especially the fuss you make of him when you arrive! If anyone is looking for a reliable and caring team to look after their pets then I couldn’t recommend Ann and her crew enough!”<cite>Joanna Williams</cite></blockquote>
+      <blockquote>“Brilliant service, highly recommend Ann and her team”<cite>Julie Wallace</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="steps" id="start">
+  <div class="wrap">
+    <h2>From hello to first walk</h2>
+    <ol>
+      <li>You get in touch.</li>
+      <li>We confirm the cost and when we can come.</li>
+      <li>We email you the booking forms, with our insurance and check certificates if you’d like them.</li>
+      <li>We come round to meet you and your dog, and pick up any keys.</li>
+      <li>Walkies.</li>
+    </ol>
+    <p class="small">We accept cash and online transfer, and email an invoice at the end of each calendar month.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <h2>Fancy a walk?</h2>
+    <a class="tel" href="tel:07919356457">07919 356 457</a>
+    <div class="lines">
+      <p>Email<br><a href="mailto:info@dogwalkersofdavenham.co.uk">info@dogwalkersofdavenham.co.uk</a></p>
+      <p>Find us<br>6a School Lane, Hartford, Northwich, Cheshire CW8 1PX</p>
+      <p>Follow the gang<br><a href="https://www.facebook.com/dogwalkersofdavenham/">Facebook @dogwalkersofdavenham</a></p>
+    </div>
+    <p class="legal">We generally cover within a three mile radius of Davenham, Northwich. Concept design by Pete Owen Design. Not the live Dog Walkers of Davenham website.</p>
+  </div>
+</footer>
+</body>
+</html>

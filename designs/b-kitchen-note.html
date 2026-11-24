@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dog Walkers of Davenham (concept) — B, The Kitchen Note</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--top:#EADFC8;--paper:#FCF8EE;--ink:#2B2A28;--biro:#1F3F94;--red:#B93424;--pencil:#625D54;--rule:#C6D3EC;
+--pic:url("img/wp-content-uploads-2024-08-screenshot-2024-08-25-183306.png")}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--top);color:var(--ink);font:400 1.0625rem/1.65 Lora,Georgia,serif;overflow-x:hidden}
+h1,h2,h3{margin:0;font-family:Kalam,cursive;font-weight:700;line-height:1.15;text-wrap:balance}
+p{margin:0}
+a{color:var(--biro)}
+a:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.hand{font-family:Kalam,cursive}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 8px}
+.mark{text-decoration:none;color:var(--biro);font:700 1.7rem/1 Kalam,cursive;display:inline-block}
+.mark svg{display:block;width:100%;height:10px;margin-top:2px}
+.mark small{display:block;font:400 1rem/1 Kalam,cursive;color:var(--red);margin-top:4px}
+.nav{display:flex;gap:24px;align-items:center}
+.nav a{color:var(--ink);text-decoration:none;border-bottom:2px solid transparent;padding:4px 0}
+.nav a:hover{border-color:var(--biro)}
+.nav a.ring{font:700 1.2rem/1 Kalam,cursive;color:var(--biro);border:2px solid var(--biro);border-radius:60% 40% 55% 45%/50% 60% 40% 50%;padding:9px 16px 6px;transition:transform .25s cubic-bezier(.16,1,.3,1),background .2s,color .2s}
+.ring .sm{display:none}
+.nav a.ring:hover{background:var(--biro);color:#fff;transform:rotate(-2deg)}
+
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(20px,4vw,56px);align-items:center;padding:34px 0 84px}
+.note{background:var(--paper);padding:38px clamp(22px,4vw,46px) 34px;transform:rotate(-1.4deg);box-shadow:0 2px 0 rgba(0,0,0,.04),0 24px 40px -26px rgba(0,0,0,.45);position:relative}
+.note::before,.pol::before{content:"";position:absolute;left:50%;top:-13px;width:104px;height:28px;margin-left:-52px;background:rgba(231,214,160,.78);transform:rotate(-2deg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.note h1{color:var(--biro);font-size:clamp(1.9rem,4.1vw,3rem);line-height:1.3;background:repeating-linear-gradient(transparent 0 calc(1.3em - 2px),var(--rule) calc(1.3em - 2px) 1.3em)}
+.note .sig{font:400 1.5rem/1 Kalam,cursive;color:var(--biro);margin-top:20px}
+.under{margin-top:34px;max-width:46ch}
+.under strong{font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-block;text-decoration:none;font:600 1rem/1 Lora,serif;padding:15px 22px;border-radius:6px;background:var(--biro);color:#fff;transition:transform .25s cubic-bezier(.16,1,.3,1),background .2s}
+.btn:hover{background:#16307A;transform:translateY(-2px)}
+.btn.q{background:transparent;color:var(--biro);box-shadow:inset 0 0 0 2px var(--biro)}
+.btn.q:hover{background:var(--paper)}
+
+.photo{background-image:var(--pic);background-repeat:no-repeat;display:block}
+.p8{aspect-ratio:537/283;background-size:151.77% auto;background-position:100% 100%}
+.p2{aspect-ratio:202/222;background-size:403.47% auto;background-position:45.35% 0}
+.p6{aspect-ratio:252/280;background-size:323.41% auto;background-position:100% 44.23%}
+.p4{aspect-ratio:270/280;background-size:301.85% auto;background-position:0 44.23%}
+.pols{position:relative;aspect-ratio:1/1.14}
+.pol{position:absolute;background:#fff;padding:10px 10px 0;box-shadow:0 20px 34px -22px rgba(0,0,0,.45),0 1px 0 rgba(0,0,0,.06);margin:0;animation:settle .9s cubic-bezier(.16,1,.3,1) both}
+.pol figcaption{font:400 1.15rem/1 Kalam,cursive;color:var(--ink);padding:11px 2px 9px;text-align:center}
+.pol.a{width:70%;left:0;top:0;--r:-4deg;transform:rotate(-4deg)}
+.pol.b{width:44%;right:0;top:40%;--r:5deg;transform:rotate(5deg);animation-delay:.12s}
+.pol.c{width:41%;left:5%;bottom:0;--r:-2deg;transform:rotate(-2deg);animation-delay:.24s}
+@keyframes settle{from{transform:rotate(calc(var(--r) * -1.5)) translateY(-26px)}to{transform:rotate(var(--r))}}
+
+.towel{height:54px;background-color:var(--paper);background-image:linear-gradient(90deg,rgba(185,52,36,.55) 50%,transparent 50%),linear-gradient(rgba(185,52,36,.55) 50%,transparent 50%);background-size:27px 27px;border-block:3px solid var(--red)}
+
+.fridge{background:var(--paper);padding:76px 0 82px}
+h2{font-size:clamp(2.1rem,5vw,3.1rem);color:var(--biro)}
+.fridge .cols{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);margin-top:26px;align-items:start}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 18px;align-items:baseline;padding:18px 0;border-bottom:2px solid var(--rule)}
+.list b{font-weight:600;font-size:1.2rem}
+.list i{font:700 1.9rem/1 Kalam,cursive;color:var(--biro);font-style:normal;white-space:nowrap}
+.list span{grid-column:1/-1;color:var(--pencil);max-width:52ch}
+.pin{background:#FFF1A8;padding:26px 26px 22px;transform:rotate(1.6deg);box-shadow:0 18px 30px -22px rgba(0,0,0,.45);font:400 1.3rem/1.45 Kalam,cursive}
+.pin p+p{margin-top:12px}
+
+.always{padding:80px 0}
+.ticks{list-style:none;margin:30px 0 0;padding:0;columns:2;column-gap:64px}
+.ticks li{break-inside:avoid;display:grid;grid-template-columns:44px 1fr;gap:14px;margin-bottom:28px;max-width:46ch}
+.ticks svg{width:44px;height:44px}
+.ticks strong{display:block;font:700 1.5rem/1.15 Kalam,cursive;margin-bottom:4px}
+
+.letter{background:var(--paper);padding:80px 0}
+.letter .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.62fr);gap:clamp(28px,5vw,72px);align-items:center;margin-top:24px}
+.letter p{max-width:60ch}
+.letter p+p{margin-top:16px}
+.letter .sig{font:700 2rem/1 Kalam,cursive;color:var(--biro);margin-top:24px}
+.letter .pol{position:relative;transform:rotate(3deg);animation:none}
+.creds{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 22px;font:400 1.2rem/1.2 Kalam,cursive;color:var(--red)}
+
+.back{padding:80px 0 84px}
+.notes{display:grid;grid-template-columns:1.25fr 1fr;gap:30px 40px;margin-top:34px;align-items:start}
+.notes blockquote{margin:0;background:var(--paper);padding:26px 28px 22px;box-shadow:0 18px 30px -24px rgba(0,0,0,.45);font:400 1.3rem/1.45 Kalam,cursive}
+.notes blockquote:nth-child(1){transform:rotate(-1deg)}
+.notes blockquote:nth-child(2){transform:rotate(1.4deg);background:#FFF1A8;margin-top:22px}
+.notes blockquote:nth-child(3){transform:rotate(.6deg);grid-column:1/-1;max-width:780px;justify-self:end;background:#E5EDF9}
+.notes cite{display:block;font:600 1rem/1.3 Lora,serif;font-style:normal;margin-top:12px}
+
+.start{background:var(--biro);color:#fff;padding:78px 0}
+.start h2{color:#fff}
+.start ol{list-style:none;counter-reset:n;margin:30px 0 0;padding:0;max-width:760px}
+.start li{counter-increment:n;display:grid;grid-template-columns:54px 1fr;gap:10px;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.3);font-size:1.15rem}
+.start li::before{content:counter(n) ".";font:700 2rem/1 Kalam,cursive;color:#FFF1A8}
+.start .after{margin-top:24px;max-width:60ch;color:#E3E9F8}
+
+.foot{padding:78px 0 44px}
+.foot .cols{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px 60px;align-items:end;margin-top:8px}
+.tel{font:700 clamp(2.4rem,8vw,4.4rem)/1.05 Kalam,cursive;color:var(--biro);text-decoration:none;display:inline-block;margin-top:10px}
+.tel:hover{color:var(--red)}
+.foot address{font-style:normal}
+.foot address a{overflow-wrap:anywhere}
+.legal{margin-top:46px;padding-top:20px;border-top:2px solid rgba(43,42,40,.2);font-size:.92rem;color:var(--pencil)}
+
+@media (max-width:880px){
+.nav a:not(.ring){display:none}
+.hero{grid-template-columns:1fr;padding:22px 0 64px}
+.pols{order:-1;aspect-ratio:1/1;max-width:520px;width:100%;margin:0 auto 6px}
+.pol.a{width:62%}.pol.b{width:38%;top:33%}.pol.c{width:36%;left:3%}
+.ring .lg{display:none}.ring .sm{display:inline}
+.fridge .cols,.letter .cols,.notes,.foot .cols{grid-template-columns:1fr}
+.ticks{columns:1}
+.letter .pol{max-width:300px;width:100%;justify-self:center}
+.notes blockquote:nth-child(2){margin-top:0}
+}
+@media (max-width:480px){
+.mark{font-size:1.3rem}
+.nav a.ring{font-size:1.05rem;padding:8px 12px 5px}
+.pol figcaption{font-size:.98rem;padding:8px 0 7px}
+.pol{padding:7px 7px 0}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.pol{animation:none}
+*{transition:none!important}
+}
+</style>
+</head>
+<body>
+<div style="background:#17201B;color:#fff;font:500 14px/1.4 system-ui,sans-serif;padding:9px 20px;position:relative;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;z-index:2147483000"><span style="display:inline-flex;align-items:center;gap:8px"><svg style="height:12px;width:auto;color:#fff" viewBox="0 0 487.5 208.5" role="img" aria-label="Pete Owen Design logo"><path fill="currentColor" d="M487.5,10.6h-41.2v15.5c-15.3-10.6-33.9-16.8-53.8-16.8-30.1,0-57,14.1-74.4,36-17.4-21.9-44.3-36-74.4-36s-57,14.1-74.4,36c-17.4-21.9-44.3-36-74.4-36C44.8,9.4,3.8,48,0,96.9h-.3v100.3h41.2v-14.5c15.3,10.6,33.9,16.8,53.8,16.8,30.1,0,57-14.1,74.4-36,17.4,21.9,44.3,36,74.4,36s57-14.1,74.4-36c17.4,21.9,44.3,36,74.4,36,52.4,0,95.1-42.6,95.1-95.1s0-1.3,0-1.9h0V10.6h0ZM94.6,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM243.5,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM392.4,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8Z"/></svg> Design idea by Pete Owen Design. Not the live Dog Walkers of Davenham website.</span><a href="../index.html" style="color:#fff;font-weight:700">Back to the start</a></div>
+<!--
+THESIS: The note a good dog walker leaves on your kitchen worktop.
+OWN-WORLD: Biro on lined paper, snapshots taped up, the tea towel that dries muddy paws.
+STORY: The note, the price list on the fridge, what they always do, a letter from Ann, notes back from owners.
+FIRST VIEWPORT: A handwritten note signed Ann and Andy, three snapshots of real walked dogs, the price and a phone number.
+-->
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#top" aria-label="Dog Walkers of Davenham, Ann and Andy">
+      Dog Walkers of Davenham
+      <svg viewBox="0 0 300 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6c40-5 70 3 110-1s80-4 120 0 50 1 66-1" fill="none" stroke="#B93424" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <small>Ann &amp; Andy</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#prices">Prices</a><a href="#always">What we always do</a><a href="#ann">Meet us</a><a href="#start">Getting started</a>
+      <a class="ring" href="tel:07919356457" aria-label="Call 07919 356 457"><span class="lg">07919 356 457</span><span class="sm">Call us</span></a>
+    </nav>
+  </header>
+
+  <main id="top" class="hero">
+    <div>
+      <div class="note">
+        <h1>Had a lovely hour out. Towel dried, water bowl topped up. See you tomorrow!</h1>
+        <p class="sig">Ann &amp; Andy x</p>
+      </div>
+      <p class="under">A mother and son who walk, visit and sit for the pets of <strong>Davenham, Kingsmead, Hartford and Moulton</strong>. Never more than four dogs at a time. An hour’s walk is <strong>£17.00</strong>.</p>
+      <div class="cta"><a class="btn" href="tel:07919356457">Call 07919 356 457</a><a class="btn q" href="mailto:info@dogwalkersofdavenham.co.uk">Write to us</a></div>
+    </div>
+    <div class="pols">
+      <figure class="pol a"><span class="photo p8" role="img" aria-label="A spaniel on one of their walks carrying a very long stick"></span><figcaption>Found a stick</figcaption></figure>
+      <figure class="pol b"><span class="photo p6" role="img" aria-label="A golden retriever, a collie and a westie sitting together on grass"></span><figcaption>Sat nicely, for once</figcaption></figure>
+      <figure class="pol c"><span class="photo p2" role="img" aria-label="A vizsla looking up at the camera"></span><figcaption>Hello you</figcaption></figure>
+    </div>
+  </main>
+</div>
+
+<div class="towel" role="presentation"></div>
+
+<section class="fridge" id="prices">
+  <div class="wrap">
+    <h2>The price list, for the fridge</h2>
+    <div class="cols">
+      <ul class="list">
+        <li><b>Dog walking, 1 hour</b><i>£17.00</i><span>Play and exploring in a small group, then towel dried and offered plenty of fresh water.</span></li>
+        <li><b>Puppy visit, 30 minutes</b><i>£10</i><span>Two visits a day, £20.</span></li>
+        <li><b>Cats and small animals, 30 minute visit</b><i>£10</i><span>Two visits a day, £20. Prices quoted are for up to two cats.</span></li>
+        <li><b>Pet sitting</b><i>please ask</i><span>For dogs, cats and small animals. This can include overnight stays.</span></li>
+      </ul>
+      <div class="pin">
+        <p>Additional dogs charged at £7.00.</p>
+        <p>Weekend bookings are £3 extra and are subject to arrangement.</p>
+        <p>We accept cash and online transfer, and email an invoice at the end of each calendar month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="always" id="always">
+  <div class="wrap">
+    <h2>What we always do</h2>
+    <ul class="ticks">
+      <li><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M7 24c4 3 7 7 9 11C21 23 28 13 38 6" fill="none" stroke="#B93424" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong>Walk four dogs at most</strong>We will never walk more than four dogs at any time.</div></li>
+      <li><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M7 24c4 3 7 7 9 11C21 23 28 13 38 6" fill="none" stroke="#B93424" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong>Dry them off</strong>After all our dog walks your dog will be towel dried to prevent any muddy paws in the house.</div></li>
+      <li><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M7 24c4 3 7 7 9 11C21 23 28 13 38 6" fill="none" stroke="#B93424" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong>Keep leads on until we’re sure</strong>We get to know your dog first. Off the lead only once we trust their recall and you have signed the Off Lead form.</div></li>
+      <li><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M7 24c4 3 7 7 9 11C21 23 28 13 38 6" fill="none" stroke="#B93424" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong>Travel them properly</strong>Our dog van has custom made dog cages and air conditioning, for a comfortable and stress free journey.</div></li>
+      <li><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M7 24c4 3 7 7 9 11C21 23 28 13 38 6" fill="none" stroke="#B93424" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong>Hold your place for free</strong>Unlike most dog walking companies, we do not charge you to reserve your dog’s space while they’re away.</div></li>
+      <li><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M7 24c4 3 7 7 9 11C21 23 28 13 38 6" fill="none" stroke="#B93424" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong>Squeeze in the cuddles</strong>On home visits we feed, change water, give any medication, and give as many cuddles as we can squeeze into a visit.</div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="letter" id="ann">
+  <div class="wrap">
+    <h2>A word from Ann</h2>
+    <div class="cols">
+      <div>
+        <p>“I’m Ann and I live in Hartford, have 2 grown up children and 2 wonderful grandchildren who have all inherited my love of animals. I have always been surrounded by animals and my children have grown up with many pets.</p>
+        <p>At the moment we have 2 dogs. A sprocker spaniel called Skye who is a qualified scent specific search and rescue dog and a labradoodle called Abby. I am also a qualified canine first aider.</p>
+        <p>My son, Andy, has been walking with me since July 2020 and has grown up with dogs around him. He has a diploma in Animal Welfare from Reaseheath College and previously worked with Birds of Prey.”</p>
+        <p class="sig">Ann</p>
+        <ul class="creds"><li>Registered with NarpsUK</li><li>Fully insured</li><li>Criminal record checked</li></ul>
+      </div>
+      <figure class="pol"><span class="photo p4" role="img" aria-label="Three dogs walking along a narrow path through long grass"></span><figcaption>Single file, please</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="back">
+  <div class="wrap">
+    <h2>Notes back from owners</h2>
+    <div class="notes">
+      <blockquote>“I just want to say a massive thank you for a fantastic service and what a difference it made knowing that Alfie and Toby were so well cared for, you are all such a delight, so caring and they all got on so well.”<cite>Mrs Gittings</cite></blockquote>
+      <blockquote>“I LOVE these guys! So professional yet personable and so very accommodating!”<cite>Mr Moriarty</cite></blockquote>
+      <blockquote>“Punctuality, reliability and the special but vitally important small things you do (paw wiping, bowl filling, excellent feedback and cheerful service) are all so reassuring and not always found with every dog walking service.”<cite>Claire Rhodes, Director, Holidays 4 Dogs</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="start" id="start">
+  <div class="wrap">
+    <h2>Getting started</h2>
+    <ol>
+      <li>You get in touch.</li>
+      <li>We confirm the cost and our availability.</li>
+      <li>We send a confirmation email with booking forms and, if you’d like them, our criminal record check and pet business insurance certificates.</li>
+      <li>We come and meet you and your pet, and you hand over any keys.</li>
+      <li>Services can begin.</li>
+    </ol>
+    <p class="after">We are happy to walk any breed of dog. Each one is assessed at that first meeting.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <h2>Leave us a note</h2>
+    <div class="cols">
+      <div><a class="tel" href="tel:07919356457">07919 356 457</a></div>
+      <address>
+        <a href="mailto:info@dogwalkersofdavenham.co.uk">info@dogwalkersofdavenham.co.uk</a><br>
+        6a School Lane, Hartford, Northwich, Cheshire CW8 1PX<br>
+        <a href="https://www.facebook.com/dogwalkersofdavenham/">Facebook @dogwalkersofdavenham</a>
+      </address>
+    </div>
+    <p class="legal">We generally cover within a three mile radius of Davenham, Northwich. Concept design by Pete Owen Design. Not the live Dog Walkers of Davenham website.</p>
+  </div>
+</footer>
+</body>
+</html>
